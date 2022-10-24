@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Sound design online
 eleventyNavigation:
   key: Home
   order: -1

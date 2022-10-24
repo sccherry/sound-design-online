@@ -1,8 +1,8 @@
 {
-  "name": "static-starter",
+  "name": "sound-design-online",
   "private": true,
   "version": "1.0.0",
-  "description": "A starter template for building static sites.",
+  "description": "Creating Sounds for Electronic Music using web audio.",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",

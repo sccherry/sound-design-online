@@ -1,3 +1,3 @@
-# static-starter
+# Sound design online
 
-A starter template for building static sites.
+A replication of the sounds from the Coursera course [Creating Sounds for Electronic Music](https://www.coursera.org/learn/music-synthesizer) using web audio.
