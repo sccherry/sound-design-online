@@ -1,0 +1,9 @@
+{
+  "layout": "default",
+  "tags": "synth",
+  "eleventyComputed": {
+    "eleventyNavigation": {
+      "title": "{{ title }}"
+    }
+  }
+}

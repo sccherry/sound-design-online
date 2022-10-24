@@ -1,0 +1,10 @@
+---
+layout: default
+title: Sound Design Online
+---
+
+<ul>
+  {% for page in collections.synth | eleventyNavigation %}
+    <li><a href="{{ page.url | url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
