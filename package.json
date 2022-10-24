@@ -1,0 +1,37 @@
+{
+  "name": "static-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A starter template for building static sites.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build:site": "eleventy --config eleventy.config.js",
+    "build": "ELEVENTY_ENV=production npm run build:site",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:site -- --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sccherry/static-starter.git"
+  },
+  "keywords": [
+    "eleventy"
+  ],
+  "author": {
+    "name": "Steve Cherry",
+    "email": "steve@stevecherry.net",
+    "url": "https://stevecherry.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sccherry/static-starter/issues"
+  },
+  "homepage": "https://github.com/sccherry/static-starter#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "rimraf": "^3.0.2"
+  }
+}
