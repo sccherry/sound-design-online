@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>[UN] Unison | Sound Design Online</title>
+    <meta
+      name="description"
+      content="Oscillator Type fatsine fattriangle fatsquare fatsawtooth Detune Octave 0 Coarse 0 Fine 0 Phase 0 Envelope Envelope Attack 0.01 Decay 0.1 Sustain 0.5 Release 1..."
+    />
+
+    <link rel="icon" href="/sound-design-online/public/img/favicon.ico" size="any" />
+    <link
+      rel="icon"
+      href="/sound-design-online/public/img/icon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/sound-design-online/public/img/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/sound-design-online/public/img/icon-512.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Sound Design Online" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="manifest" href="/sound-design-online/site.webmanifest" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="canonical" href="https://stevecherry.net/sound-design-online/synth/un/" />
+
+    <link
+      rel="stylesheet"
+      href="https://stevecherry.net/normcore/css/normcore.css"
+    />
+    <link rel="stylesheet" href="/sound-design-online/public/style.css" media="screen" />
+
+    <script
+      src="https://stevecherry.net/normcore/js/normcore.js"
+      defer
+    ></script>
+    <script src="/sound-design-online/public/script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container cover stack">
+      <header role="banner">
+        <a href="/sound-design-online/">Sound Design Online</a>
+      </header>
+
+      <main class="flex-1 stack" role="main">
+        <h1>[UN] Unison</h1>
+
+        
+
+
+
+<div class="gallery">
+  
+  
+  
+
+  
+      <fieldset id="synth-oscillator">
+        <legend>Oscillator</legend>
+        
+    
+  
+      <label class="block" for="synth-oscillator-type">Type</label>
+      
+    <select id="synth-oscillator-type" name="synth-oscillator-type" value="fatsawtooth">
+      
+        <option value="fatsine">fatsine</option>
+      
+        <option value="fattriangle">fattriangle</option>
+      
+        <option value="fatsquare">fatsquare</option>
+      
+        <option value="fatsawtooth" selected>fatsawtooth</option>
+      
+    </select>
+  
+    
+
+    
+    
+  
+  
+  
+  
+  
+
+  
+      <fieldset id="synth-oscillator-detune">
+        <legend>Detune</legend>
+        
+    
+  
+      <label class="block" for="synth-oscillator-detune-octave">Octave</label>
+      
+    <input-output>
+      <input type="range" id="synth-oscillator-detune-octave" name="synth-oscillator-detune-octave" data-target="input-output.input" min="-3600" max="3600" step="1200" value="0">
+      <output for="synth-oscillator-detune-octave" data-target="input-output.output">0</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="synth-oscillator-detune-coarse">Coarse</label>
+      
+    <input-output>
+      <input type="range" id="synth-oscillator-detune-coarse" name="synth-oscillator-detune-coarse" data-target="input-output.input" min="-1200" max="1200" step="100" value="0">
+      <output for="synth-oscillator-detune-coarse" data-target="input-output.output">0</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="synth-oscillator-detune-fine">Fine</label>
+      
+    <input-output>
+      <input type="range" id="synth-oscillator-detune-fine" name="synth-oscillator-detune-fine" data-target="input-output.input" min="-100" max="100" step="1" value="0">
+      <output for="synth-oscillator-detune-fine" data-target="input-output.output">0</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+    
+  
+      <label class="block" for="synth-oscillator-phase">Phase</label>
+      
+    <input-output>
+      <input type="range" id="synth-oscillator-phase" name="synth-oscillator-phase" data-target="input-output.input" min="-180" max="180" step="1" value="0">
+      <output for="synth-oscillator-phase" data-target="input-output.output">0</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+  
+  
+      <fieldset id="synth-envelope">
+        <legend>Envelope</legend>
+        
+    
+  
+      <fieldset id="synth-envelope-envelope">
+        <legend>Envelope</legend>
+        
+    
+  
+      <label class="block" for="synth-envelope-envelope-attack">Attack</label>
+      
+    <input-output>
+      <input type="range" id="synth-envelope-envelope-attack" name="synth-envelope-envelope-attack" data-target="input-output.input" min="0" max="1" step="0.001" value="0.01">
+      <output for="synth-envelope-envelope-attack" data-target="input-output.output">0.01</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="synth-envelope-envelope-decay">Decay</label>
+      
+    <input-output>
+      <input type="range" id="synth-envelope-envelope-decay" name="synth-envelope-envelope-decay" data-target="input-output.input" min="0" max="1" step="0.001" value="0.1">
+      <output for="synth-envelope-envelope-decay" data-target="input-output.output">0.1</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="synth-envelope-envelope-sustain">Sustain</label>
+      
+    <input-output>
+      <input type="range" id="synth-envelope-envelope-sustain" name="synth-envelope-envelope-sustain" data-target="input-output.input" min="0" max="1" step="0.001" value="0.5">
+      <output for="synth-envelope-envelope-sustain" data-target="input-output.output">0.5</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="synth-envelope-envelope-release">Release</label>
+      
+    <input-output>
+      <input type="range" id="synth-envelope-envelope-release" name="synth-envelope-envelope-release" data-target="input-output.input" min="0" max="1" step="0.001" value="1">
+      <output for="synth-envelope-envelope-release" data-target="input-output.output">1</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+  
+      </fieldset>
+    
+
+  
+  
+      <fieldset id="chorus">
+        <legend>Chorus</legend>
+        
+    
+  
+      <label class="block" for="chorus-frequency">Frequency</label>
+      
+    <input-output>
+      <input type="range" id="chorus-frequency" name="chorus-frequency" data-target="input-output.input" min="0" max="10" step="0.001" value="2">
+      <output for="chorus-frequency" data-target="input-output.output">2</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="chorus-delay-time">Delay time</label>
+      
+    <input-output>
+      <input type="range" id="chorus-delay-time" name="chorus-delay-time" data-target="input-output.input" min="0" max="2" step="0.001" value="0">
+      <output for="chorus-delay-time" data-target="input-output.output">0</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="chorus-depth">Depth</label>
+      
+    <input-output>
+      <input type="range" id="chorus-depth" name="chorus-depth" data-target="input-output.input" min="0" max="1" step="0.001" value="0.7">
+      <output for="chorus-depth" data-target="input-output.output">0.7</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+</div>
+
+
+  
+  
+      <label class="block" for="piano-mode">Mode</label>
+      
+    <select id="piano-mode" name="piano-mode" value="button">
+      
+        <option value="button" selected>button</option>
+      
+        <option value="toggle">toggle</option>
+      
+        <option value="impulse">impulse</option>
+      
+    </select>
+  
+    
+
+  <div id="piano-piano"></div>
+
+
+<script type="module">
+  import { Chorus, Midi, PolySynth, Synth, start } from 'https://cdn.skypack.dev/tone';
+  import { createChorus, createAmplitudeEnvelope, createOmniOscillator, createPiano } from '../../public/lib/nexus-tone-components.js';
+
+  const options = {"synth":{"oscillator":{"type":"fatsawtooth"}},"chorus":{"frequency":2,"delayTime":0,"depth":0.7}};
+
+  const synth = new PolySynth(Synth, { maxPolyphony: 4, ...options.synth });
+  const chorus = new Chorus(options.chorus);
+
+  synth.chain(chorus).toDestination();
+
+  const onMidi = ([status, data0, data1]) => {
+    const message = Math.floor(status / 16);
+    const channel = status % 16;
+
+    switch (message) {
+      // note on
+      case 9: {
+        const freq = Midi(data0).toFrequency();
+        synth.triggerAttack(freq, '+0', data1 / 127);
+        break;
+      }
+      // note off
+      case 8: {
+        const freq = Midi(data0).toFrequency();
+        synth.triggerRelease(freq);
+        break;
+      }
+    }
+  };
+
+  createOmniOscillator('#synth-oscillator', value => {
+    synth.set({ oscillator: value });
+  });
+
+  createAmplitudeEnvelope('#synth-envelope', value => {
+    synth.set({ envelope: value });
+  });
+
+  createChorus('#chorus', value => {
+    chorus.set(value);
+  });
+
+  createPiano('#piano', onMidi);
+
+  document.addEventListener('click', async () => {
+    await start();
+    console.log('audio context resumed');
+  }, { once: true });
+</script>
+
+      </main>
+
+      <footer role="contentinfo">
+        <p>Creating Sounds for Electronic Music using web audio.</p>
+      </footer>
+    </div>
+
+    <script defer>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sound-design-online/sw.js', {
+          scope: '/sound-design-online/',
+        });
+      }
+    </script>
+  </body>
+</html>

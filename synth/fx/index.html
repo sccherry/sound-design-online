@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>[FX] Special FX | Sound Design Online</title>
+    <meta
+      name="description"
+      content="Noise Type white pink brown Filter Frequency 4n 8n 16n Type sine triangle square sawtooth Base frequency 20 Octaves 6 Filter type lowpass highpass bandpass..."
+    />
+
+    <link rel="icon" href="/sound-design-online/public/img/favicon.ico" size="any" />
+    <link
+      rel="icon"
+      href="/sound-design-online/public/img/icon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/sound-design-online/public/img/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/sound-design-online/public/img/icon-512.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Sound Design Online" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="manifest" href="/sound-design-online/site.webmanifest" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="canonical" href="https://stevecherry.net/sound-design-online/synth/fx/" />
+
+    <link
+      rel="stylesheet"
+      href="https://stevecherry.net/normcore/css/normcore.css"
+    />
+    <link rel="stylesheet" href="/sound-design-online/public/style.css" media="screen" />
+
+    <script
+      src="https://stevecherry.net/normcore/js/normcore.js"
+      defer
+    ></script>
+    <script src="/sound-design-online/public/script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container cover stack">
+      <header role="banner">
+        <a href="/sound-design-online/">Sound Design Online</a>
+      </header>
+
+      <main class="flex-1 stack" role="main">
+        <h1>[FX] Special FX</h1>
+
+        
+
+
+
+<div class="gallery">
+  
+  
+      <fieldset id="noise">
+        <legend>Noise</legend>
+        
+    
+  
+      <label class="block" for="noise-type">Type</label>
+      
+    <select id="noise-type" name="noise-type" value="">
+      
+        <option value="white">white</option>
+      
+        <option value="pink">pink</option>
+      
+        <option value="brown">brown</option>
+      
+    </select>
+  
+    
+
+  
+      </fieldset>
+    
+
+  
+  
+      <fieldset id="filter">
+        <legend>Filter</legend>
+        
+    
+  
+      <label class="block" for="filter-frequency">Frequency</label>
+      
+    <select id="filter-frequency" name="filter-frequency" value="4m">
+      
+        <option value="4n">4n</option>
+      
+        <option value="8n">8n</option>
+      
+        <option value="16n">16n</option>
+      
+    </select>
+  
+    
+
+    
+  
+      <label class="block" for="filter-type">Type</label>
+      
+    <select id="filter-type" name="filter-type" value="sawtooth">
+      
+        <option value="sine">sine</option>
+      
+        <option value="triangle">triangle</option>
+      
+        <option value="square">square</option>
+      
+        <option value="sawtooth" selected>sawtooth</option>
+      
+    </select>
+  
+    
+
+    
+  
+      <label class="block" for="filter-base-frequency">Base frequency</label>
+      
+    <input-output>
+      <input type="range" id="filter-base-frequency" name="filter-base-frequency" data-target="input-output.input" min="20" max="2000" step="1" value="20">
+      <output for="filter-base-frequency" data-target="input-output.output">20</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="filter-octaves">Octaves</label>
+      
+    <input-output>
+      <input type="range" id="filter-octaves" name="filter-octaves" data-target="input-output.input" min="1" max="20" step="1" value="6">
+      <output for="filter-octaves" data-target="input-output.output">6</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="filter-filter-type">Filter type</label>
+      
+    <select id="filter-filter-type" name="filter-filter-type" value="bandpass">
+      
+        <option value="lowpass">lowpass</option>
+      
+        <option value="highpass">highpass</option>
+      
+        <option value="bandpass" selected>bandpass</option>
+      
+        <option value="lowshelf">lowshelf</option>
+      
+        <option value="highshelf">highshelf</option>
+      
+        <option value="notch">notch</option>
+      
+        <option value="allpass">allpass</option>
+      
+        <option value="peaking">peaking</option>
+      
+    </select>
+  
+    
+
+    
+  
+      <label class="block" for="filter-filter-rolloff">Filter rolloff</label>
+      
+    <select id="filter-filter-rolloff" name="filter-filter-rolloff" value="-12">
+      
+        <option value="-12" selected>-12</option>
+      
+        <option value="-24">-24</option>
+      
+        <option value="-48">-48</option>
+      
+        <option value="-96">-96</option>
+      
+    </select>
+  
+    
+
+    
+  
+      <label class="block" for="filter-filter-q">Filter Q</label>
+      
+    <input-output>
+      <input type="range" id="filter-filter-q" name="filter-filter-q" data-target="input-output.input" min="1" max="8" step="1" value="100">
+      <output for="filter-filter-q" data-target="input-output.output">100</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+  
+  
+      <fieldset id="reverb">
+        <legend>Reverb</legend>
+        
+    
+  
+      <label class="block" for="reverb-room-size">Room size</label>
+      
+    <input-output>
+      <input type="range" id="reverb-room-size" name="reverb-room-size" data-target="input-output.input" min="0" max="1" step="0.001" value="0.2">
+      <output for="reverb-room-size" data-target="input-output.output">0.2</output>
+    </input-output>
+  
+    
+
+    
+  
+      <label class="block" for="reverb-dampening">Dampening</label>
+      
+    <input-output>
+      <input type="range" id="reverb-dampening" name="reverb-dampening" data-target="input-output.input" min="20" max="20000" step="1" value="1000">
+      <output for="reverb-dampening" data-target="input-output.output">1000</output>
+    </input-output>
+  
+    
+
+  
+      </fieldset>
+    
+
+  
+  
+      <fieldset id="transport">
+        <legend>Transport</legend>
+        
+    
+  
+      <label class="block" for="transport-bpm">BPM</label>
+      
+    <input-output>
+      <input type="range" id="transport-bpm" name="transport-bpm" data-target="input-output.input" min="60" max="220" step="1" value="120">
+      <output for="transport-bpm" data-target="input-output.output">120</output>
+    </input-output>
+  
+    
+
+    
+  <label class="block" for="transport-state">
+    <input type="checkbox" id="transport-state" name="transport-state"  checked>
+    State
+  </label>
+
+  
+      </fieldset>
+    
+
+</div>
+
+
+  
+  
+      <label class="block" for="piano-mode">Mode</label>
+      
+    <select id="piano-mode" name="piano-mode" value="button">
+      
+        <option value="button" selected>button</option>
+      
+        <option value="toggle">toggle</option>
+      
+        <option value="impulse">impulse</option>
+      
+    </select>
+  
+    
+
+  <div id="piano-piano"></div>
+
+
+<script type="module">
+  import { AutoFilter, Freeverb, Noise, Time, Transport, start } from 'https://cdn.skypack.dev/tone';
+  import { createAutoFilter, createFreeverb, createNoise, createPiano, createTransport } from '../../public/lib/nexus-tone-components.js';
+
+  const options = {"noise":{"type":"white"},"filter":{"frequency":"4m","baseFrequency":20,"octaves":6,"type":"sawtooth","filter":{"type":"bandpass","Q":100}},"reverb":{"roomSize":0.2,"dampening":1000},"transport":{"state":true}};
+
+  const noise = new Noise(options.noise);
+  const filter = new AutoFilter(options.filter);
+  filter._lfo.set('phase', 180);
+  const reverb = new Freeverb(options.reverb);
+
+  noise.connect(filter);
+  filter.connect(reverb);
+  reverb.toDestination();
+
+  if (options.transport.bpm) {
+    Transport.bpm.value = options.transport.bpm;
+  }
+
+  const onMidi = ([status, data0, data1]) => {
+    const message = Math.floor(status / 16);
+    const channel = status % 16;
+
+    switch (message) {
+      // note on
+      case 9: {
+        const len = Time(1 / filter.get('frequency').frequency).toSeconds();
+
+        Transport.schedule(time => {
+          reverb.set('roomSize', options.reverb.roomSize);
+          reverb.roomSize.linearRampTo(0.8, len, time);
+          filter.filter.Q.set(options.filter.filter.Q);
+          filter.filter.Q.linearRampTo(0.1, len, time);
+          noise.start(time).stop(time + len);
+          filter.start(time).stop(time + len);
+        }, Transport.nextSubdivision(len));
+        break;
+      }
+    }
+  };
+
+  createNoise('#noise', value => {
+    noise.set(value);
+  });
+
+  createAutoFilter('#filter', value => {
+    filter.set(value);
+  });
+
+  createFreeverb('#reverb', value => {
+    reverb.set(value);
+  });
+
+  createTransport('#transport', value => {
+    Object.keys(value).forEach(key => {
+      switch (key) {
+        case 'bpm': {
+          Transport.bpm.value = value[key];
+          break;
+        }
+        case 'state': {
+          if (value[key]) {
+            Transport.start();
+          } else {
+            Transport.stop();
+          }
+        }
+      }
+    });
+  });
+
+  createPiano('#piano', onMidi);
+
+  document.addEventListener('click', async () => {
+    await start();
+
+    if (options.transport.state) {
+      Transport.start();
+    }
+
+    console.log('audio context resumed');
+  }, { once: true });
+</script>
+
+      </main>
+
+      <footer role="contentinfo">
+        <p>Creating Sounds for Electronic Music using web audio.</p>
+      </footer>
+    </div>
+
+    <script defer>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sound-design-online/sw.js', {
+          scope: '/sound-design-online/',
+        });
+      }
+    </script>
+  </body>
+</html>
