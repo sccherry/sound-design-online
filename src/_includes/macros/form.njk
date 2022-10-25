@@ -1,0 +1,25 @@
+{% macro checkbox(label, id, value) %}
+  <label class="block" for="{{ id }}">
+    <input type="checkbox" id="{{ id }}" name="{{ id }}" {% if value %} checked{% endif %}>
+    {{ label }}
+  </label>
+{% endmacro %}
+
+{% macro range(label, id, value, min=0, max=100, step=1) %}
+  {% field label, { id: id } %}
+    <input-output>
+      <input type="range" id="{{ id }}" name="{{ id }}" data-target="input-output.input" min="{{ min }}" max="{{ max }}" step="{{ step }}" value="{{ value }}">
+      <output for="{{ id }}" data-target="input-output.output">{{ value }}</output>
+    </input-output>
+  {% endfield %}
+{% endmacro %}
+
+{% macro select(label, id, value, options) %}
+  {% field label, { id: id } %}
+    <select id="{{ id }}" name="{{ id }}" value="{{ value }}">
+      {% for option in options %}
+        <option value="{{ option }}"{% if option == value %} selected{% endif %}>{{ option }}</option>
+      {% endfor %}
+    </select>
+  {% endfield %}
+{% endmacro %}

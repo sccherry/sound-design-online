@@ -10,6 +10,30 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./public');
   eleventyConfig.addPassthroughCopy('./src/sw.js');
 
+  eleventyConfig.addFilter('parsePrefix', (value, list) =>
+    list.reduce((res, prefix) => (value.includes(prefix) ? prefix : res), '')
+  );
+
+  eleventyConfig.addFilter('mapPrefix', (value, prefix) =>
+    value.map((item) => `${prefix}${item}`)
+  );
+
+  eleventyConfig.addPairedShortcode('card', (content, title, id) => {
+    return `
+      <fieldset id="${id}">
+        <legend>${title}</legend>
+        ${content}
+      </fieldset>
+    `;
+  });
+
+  eleventyConfig.addPairedShortcode('field', (content, label, attrs) => {
+    return `
+      <label class="block" for="${attrs.id}">${label}</label>
+      ${content}
+    `;
+  });
+
   return {
     pathPrefix,
     dataTemplateEngine: 'njk',
