@@ -34,7 +34,7 @@ state:
 {% from "macros/tone.njk" import amplitudeEnvelope, chorus, feedbackDelay, filter, frequencyEnvelope, omniOscillator %}
 {% from "macros/nexus.njk" import piano %}
 
-<div class="gallery">
+<div class="grid">
   {{ omniOscillator('Oscillator', 'synth-oscillator', type=state.synth.oscillator.type) }}
   {{ amplitudeEnvelope('Envelope', 'synth-envelope', attack=state.synth.envelope.attack, sustain=state.synth.envelope.sustain, release=state.synth.envelelope.release) }}
   {{ filter('Filter', 'synth-filter', type=state.synth.filter.type, Q=state.synth.filter.Q) }}

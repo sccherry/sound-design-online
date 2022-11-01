@@ -23,7 +23,7 @@ state:
 {% from "macros/tone.njk" import amplitudeEnvelope, omniOscillator, pattern, transport %}
 {% from "macros/nexus.njk" import piano %}
 
-<div class="gallery">
+<div class="grid">
   {{ pattern('Pattern', 'pattern', interval=state.pattern.interval) }}
   {{ transport('Transport', 'transport', state=state.transport.state) }}
   {{ omniOscillator('Oscillator', 'synth-oscillator', type=state.synth.oscillator.type) }}

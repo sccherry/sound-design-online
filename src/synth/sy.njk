@@ -24,7 +24,7 @@ state:
 {% from "macros/tone.njk" import amplitudeEnvelope, autoFilter, omniOscillator, transport %}
 {% from "macros/nexus.njk" import piano %}
 
-<div class="gallery">
+<div class="grid">
   {{ omniOscillator('Oscillator', 'synth-oscillator', type=state.synth.oscillator.type) }}
   {{ omniOscillator('Suboscillator', 'synth-suboscillators-0', type=state.synth.suboscillators[0].type, detune=state.synth.suboscillators[0].detune, phase=state.synth.suboscillators[0].phase) }}
   {{ amplitudeEnvelope('Envelope', 'synth-envelope', decay=state.synth.envelop.decay, sustain=state.synth.envelop.sustain) }}

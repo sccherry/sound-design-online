@@ -15,7 +15,7 @@ state:
 {% from "macros/tone.njk" import amplitudeEnvelope, chorus, omniOscillator %}
 {% from "macros/nexus.njk" import piano %}
 
-<div class="gallery">
+<div class="grid">
   {{ omniOscillator('Oscillator', 'synth-oscillator', type=state.synth.oscillator.type) }}
   {{ amplitudeEnvelope('Envelope', 'synth-envelope') }}
   {{ chorus('Chorus', 'chorus', frequency=state.chorus.frequency, delayTime=state.chorus.delayTime, depth=state.chorus.depth) }}

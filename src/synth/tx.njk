@@ -46,7 +46,7 @@ state:
 
 {% from "macros/tone.njk" import compressor, delay, filter, freeverb, gain, lfo, loop, omniOscillator, transport %}
 
-<div class="gallery">
+<div class="grid">
   <div>
     {{ omniOscillator('Oscillator 1', 'oscillator-1', frequency=state.oscillators[0].oscillator.frequency, type=state.oscillators[0].oscillator.type) }}
     {{ gain('Gain 1', 'gain-1', gain=state.oscillators[0].gain.gain) }}
