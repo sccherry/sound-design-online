@@ -1,5 +1,5 @@
 {% macro checkbox(label, id, value) %}
-  <label class="block" for="{{ id }}">
+  <label for="{{ id }}">
     <input type="checkbox" id="{{ id }}" name="{{ id }}" {% if value %} checked{% endif %}>
     {{ label }}
   </label>

@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPairedShortcode('field', (content, label, attrs) => {
     return `
-      <label class="block" for="${attrs.id}">${label}</label>
+      <label for="${attrs.id}">${label}</label>
       ${content}
     `;
   });
