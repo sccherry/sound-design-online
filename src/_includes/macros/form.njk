@@ -7,10 +7,8 @@
 
 {% macro range(label, id, value, min=0, max=100, step=1) %}
   {% field label, { id: id } %}
-    <input-output>
-      <input type="range" id="{{ id }}" name="{{ id }}" data-target="input-output.input" min="{{ min }}" max="{{ max }}" step="{{ step }}" value="{{ value }}">
-      <output for="{{ id }}" data-target="input-output.output">{{ value }}</output>
-    </input-output>
+    <input type="range" id="{{ id }}" name="{{ id }}" min="{{ min }}" max="{{ max }}" step="{{ step }}" value="{{ value }}">
+    <output for="{{ id }}">{{ value }}</output>
   {% endfield %}
 {% endmacro %}
 
