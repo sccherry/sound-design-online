@@ -8,7 +8,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPassthroughCopy('./public');
-  eleventyConfig.addPassthroughCopy('./src/sw.js');
 
   eleventyConfig.addFilter('parsePrefix', (value, list) =>
     list.reduce((res, prefix) => (value.includes(prefix) ? prefix : res), '')

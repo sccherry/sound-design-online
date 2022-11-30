@@ -6,6 +6,5 @@
     "name": "{{ pkg.author.name }}",
     "email": "{{ pkg.author.email }}",
     "url": "{{ pkg.author.url }}"
-  },
-  "color": "#000000"
+  }
 }
