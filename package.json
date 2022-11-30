@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sccherry/static-starter.git"
+    "url": "git+https://github.com/sccherry/sound-design-online.git"
   },
   "keywords": [
     "eleventy"
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sccherry/static-starter/issues"
+    "url": "https://github.com/sccherry/sound-design-online/issues"
   },
-  "homepage": "https://github.com/sccherry/static-starter#readme",
+  "homepage": "https://github.com/sccherry/sound-design-online#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
